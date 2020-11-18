@@ -19,6 +19,16 @@ struct ContentView: View {
                     width: playerSize.width,
                     height: playerSize.height
                 )
+            
+            Picker("動画選択", selection: $selected) {
+                ForEach(Video.allCases, id: \.self) { video in
+                    Text(video.rawValue.uppercased())
+                }
+            }
+            // picker style 色々.
+//            .pickerStyle(InlinePickerStyle())
+            .pickerStyle(SegmentedPickerStyle())
+//            .pickerStyle(MenuPickerStyle())
         }
         .onAppear {
             // windowサイズからplayerサイズを算出.
