@@ -32,6 +32,21 @@ struct ContentView: View {
     }
 }
 
+enum Video: String, CaseIterable {
+    
+    case guitar
+    case nirvana
+    case amaiyume
+    
+    var videoId: String {
+        switch self {
+        case .guitar: return "QW2TfV20FXY"
+        case .nirvana: return "hTWKbfoikeg"
+        case .amaiyume: return "Y-ou8d-wMoI"
+        }
+    }
+}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
