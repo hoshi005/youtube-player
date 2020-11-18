@@ -12,6 +12,8 @@ struct PlayerView: UIViewRepresentable {
     
     typealias UIViewType = YTSwiftyPlayer
     
+    @Binding var video: Video
+    
     func makeUIView(context: Context) -> YTSwiftyPlayer {
         // 初期化処理・初期設定.
         let player = YTSwiftyPlayer()
@@ -23,7 +25,7 @@ struct PlayerView: UIViewRepresentable {
         // 再生する動画の設定.
         uiView.setPlayerParameters([
             .playsInline(true),
-            .videoID("QW2TfV20FXY"),
+            .videoID(video.videoId),
         ])
         uiView.loadPlayer()
     }
@@ -31,6 +33,6 @@ struct PlayerView: UIViewRepresentable {
 
 struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerView()
+        PlayerView(video: .constant(.guitar))
     }
 }

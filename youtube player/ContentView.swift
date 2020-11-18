@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            PlayerView()
+            PlayerView(video: $selected)
                 .frame(
                     width: playerSize.width,
                     height: playerSize.height
