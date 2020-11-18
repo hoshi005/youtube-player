@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var playerSize: CGSize = .zero
+    @State private var selected: Video = .guitar
     
     var body: some View {
         VStack {
