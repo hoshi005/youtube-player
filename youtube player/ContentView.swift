@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var playerSize: CGSize = .zero
-    @State private var selected: Video = .guitar
+    @State private var selected: Video = .violin
     
     var body: some View {
         VStack {
@@ -45,14 +45,14 @@ struct ContentView: View {
 
 enum Video: String, CaseIterable {
     
+    case violin
     case guitar
-    case nirvana
     case amaiyume
     
     var videoId: String {
         switch self {
+        case .violin: return "hTWKbfoikeg"
         case .guitar: return "QW2TfV20FXY"
-        case .nirvana: return "hTWKbfoikeg"
         case .amaiyume: return "Y-ou8d-wMoI"
         }
     }

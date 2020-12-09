@@ -25,6 +25,7 @@
 		EF14FF472564A4F3007A45B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF14FF492564A4F3007A45B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF2D2BA52564A74700BE5278 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		EF74962725810764004B0497 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F9B01544F0F1535F6F52A2D9 /* Pods-youtube player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youtube player.debug.xcconfig"; path = "Target Support Files/Pods-youtube player/Pods-youtube player.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +52,7 @@
 		EF14FF342564A4F2007A45B6 = {
 			isa = PBXGroup;
 			children = (
+				EF74962725810764004B0497 /* README.md */,
 				EF14FF3F2564A4F2007A45B6 /* youtube player */,
 				EF14FF3E2564A4F2007A45B6 /* Products */,
 				F6B04E258845D0AEEA06D170 /* Pods */,
